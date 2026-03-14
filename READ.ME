@@ -1,0 +1,71 @@
+# Sales Performance Analysis (SQL + Excel)
+
+## Project Overview
+
+This project analyzes sales data to identify key business insights such as top-selling products, top customers, regional performance, and monthly sales trends. The analysis was performed using SQL queries and visualized using Excel dashboards.
+
+## Tools Used
+
+* SQL (Data analysis queries)
+* Microsoft Excel (Dashboard and visualization)
+
+## Dataset
+
+The dataset contains sales transaction records including:
+
+* Order Date
+* Region
+* Category
+* Product Name
+* Customer Name
+* Sales Amount
+
+## SQL Analysis Performed
+
+### 1. Top 3 Products by Region
+
+Used `ROW_NUMBER()` with `PARTITION BY` to identify the top 3 products in each region based on total sales.
+
+### 2. Top 10 Customers by Sales
+
+Used `RANK()` function to rank customers according to their total purchase value.
+
+### 3. Monthly Sales Growth
+
+Used `LAG()` window function to compare monthly sales with the previous month and calculate growth.
+
+### 4. Best Category by Region
+
+Identified the highest performing product category in each region using ranking functions.
+
+### 5. Running Total of Sales
+
+Calculated cumulative sales using a window function to analyze long-term revenue trends.
+
+## Excel Dashboard
+
+The SQL results were exported to Excel and visualized using charts and pivot tables, including:
+
+* Top Products by Region
+* Top Customers by Sales
+* Monthly Sales Trend
+* Monthly Sales Growth
+* Running Total of Sales
+
+## Key Insights
+
+* Technology category is the highest-performing category across regions.
+* Canon imageCLASS 2200 Advanced Copier is one of the top-selling products.
+* Sales show stronger growth toward the end of the year.
+* A small group of customers contributes significantly to total revenue.
+
+## Project Files
+
+sales_data.csv – Dataset used for analysis
+sales_analysis.sql – SQL queries used in the project
+sales_dashboard.xlsx – Excel dashboard with visualizations
+README.md – Project documentation
+
+## Author
+
+Rajesh
